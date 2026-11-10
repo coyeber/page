@@ -298,3 +298,4 @@ img {max-width: 100%;display: block;}
   html {scroll-behavior:auto;}
   *,*::before,*::after {transition:none !important;animation:none !important;}
 }
+[hidden] { display: none !important; }
