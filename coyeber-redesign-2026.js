@@ -64,7 +64,7 @@
   }
 
   // Keep a designed fallback when third-party portfolio image hosts are unavailable.
-  document.querySelectorAll(".archive-grid img, .cover-gallery img, .partner-gallery img").forEach(function (img) {
+  document.querySelectorAll(".archive-grid img, .cover-gallery img, .partner-gallery img, .work-image img").forEach(function (img) {
     function fallback() {
       if (!img.parentElement || img.dataset.failed === "true") return;
       img.dataset.failed = "true";
