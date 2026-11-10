@@ -18,8 +18,402 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./coyeber-redesign-2026.css">
+  <link rel="stylesheet" href="./coyeber-redesign-2026.css?v=portfolio-20261110">
   <title>Coyeber® — Agência criativa & tecnologia</title>
+  <style id="coyeber-critical-styles">
+/* COYEBER® — editorial creative agency / 2026 */
+:root {
+  --paper: #f6f6f3;
+  --ink: #0b0b0b;
+  --white: #fff;
+  --gray: #686868;
+  --rule: #c9c9c7;
+  --muted: #e9e9e5;
+  --red: #df2228;
+  --mono: "DM Mono", "Courier New", monospace;
+  --sans: "Inter Tight", "Arial Narrow", Arial, sans-serif;
+  --page-margin: clamp(18px, 2.6vw, 48px);
+}
+*, *::before, *::after {box-sizing: border-box;}
+html {scroll-behavior: smooth;scroll-padding-top: 85px;}
+body {margin: 0;background: var(--paper);color: var(--ink);font-family: var(--sans);-webkit-font-smoothing: antialiased;}
+button, input, textarea, select {font: inherit;}
+button {cursor: pointer;}
+a {color: inherit;text-decoration: none;}
+img {max-width: 100%;display: block;}
+::selection {background: var(--ink);color: var(--white);}
+:focus-visible {outline: 2px solid var(--red);outline-offset: 5px;}
+.skip-link {position: fixed;top: -100px;left: 16px;padding: 12px 18px;color: white;background: black;z-index: 1000;}
+.skip-link:focus {top: 10px;}
+.section-shell {max-width: 1900px;margin-inline: auto;padding-inline: var(--page-margin);}
+.small-label,.section-kicker,.section-heading-top,.hero-meta,.hero-bottom,.cover-micro,.cover-foot,.project-index,.project-type,.archive-grid figcaption,.about-facts span,.process-grid>div>span,.contact-top,.form-disclaimer,.footer-bottom,.back-top {font-family: var(--mono);font-size: 10px;letter-spacing: .055em;}
+.site-header {position: relative;z-index: 100;background: var(--paper);}
+.header-inner {display: grid;grid-template-columns: 1.62fr 3.22fr;gap: 26px;max-width: 1900px;margin: auto;padding: 20px var(--page-margin) 0;}
+.brand {font-weight: 900;font-size: clamp(22px, 2vw, 31px);line-height: 1;letter-spacing: -.075em;white-space: nowrap;padding: 1px 0 20px;border-bottom: 1px solid var(--rule);}
+.brand-mark {font-family: var(--mono);font-size: 9px;vertical-align: top;letter-spacing: 0;margin-left: 3px;}
+.primary-nav {display: grid;grid-template-columns: repeat(5,minmax(0,1fr));gap: clamp(10px, 1.5vw, 25px);align-items: stretch;}
+.primary-nav>a {font-family: var(--mono);font-size: clamp(9px, .72vw, 12px);font-weight: 500;display: flex;align-items: flex-start;justify-content: space-between;gap: 5px;padding: 8px 0 20px;border-bottom: 1px solid var(--rule);white-space: nowrap;transition: border-color .2s;}
+.primary-nav>a:hover {border-color: var(--ink);}
+.primary-nav i {width: 10px;height: 10px;flex: 0 0 auto;border: 1px solid #aaa;border-radius: 50%;transition: background .2s,border-color .2s;}
+.primary-nav>a:hover i {background: var(--ink);border-color: var(--ink);}
+.nav-contact>span {font-size: 14px;line-height: .7;}
+.menu-toggle {display: none;}
+.hero {padding-top: clamp(80px, 8vw, 170px);min-height: min(760px,92vh);position: relative;padding-bottom: clamp(68px,7vw,125px);}
+.hero-meta {display: flex;justify-content: space-between;gap: 20px;color: #555;white-space: nowrap;font-size: 10px;}
+.status-dot {display: inline-block;width: 6px;height: 6px;background: var(--ink);border-radius: 100%;margin: 0 8px 1px 0;}
+.hero-composition {position: relative;padding-top: clamp(32px,3.9vw,70px);}
+.hero-title {font-size: clamp(60px,10.9vw,208px);line-height: .77;font-weight: 900;letter-spacing: -.095em;margin: 0;text-transform: uppercase;}
+.hero-title>span {display: block;white-space: nowrap;}
+.hero-indent {padding-left: 25.1%;}
+.hero-ending {display: flex !important;align-items: flex-end;gap: clamp(6px,1.1vw,20px);padding-left: 24.2%;margin-top: clamp(3px,.45vw,12px);}
+.hero-ending>span:last-child {font-size: .67em;letter-spacing: -.089em;margin-bottom: .017em;}
+.hero-period {color: var(--red);}
+.hero-object {height: .94em;width: 1.34em;flex: 0 0 auto;background: #080808;border-radius: 3px;color: white;display: flex;align-items: center;justify-content: center;position: relative;overflow: hidden;}
+.hero-object::before,.hero-object::after {content:"";position:absolute;border:1px solid #494949;border-radius:50%;width:.67em;height:.67em;transform:rotate(-26deg) scaleX(.56);}
+.hero-object::after {width:.84em;height:.84em;transform:rotate(26deg) scaleX(.56);border-color:#303030;}
+.hero-object-core {font-size:.64em;font-weight:900;letter-spacing:-.1em;line-height:1;color:white;transform:rotate(-17deg);z-index:1;}
+.object-caption {position:absolute;bottom:10%;left:7%;font-family:var(--mono);font-size:clamp(5px,.65vw,10px);letter-spacing:0;z-index:2;white-space:nowrap;}
+.hero-side-note {position:absolute;right:0;top:clamp(14px,1vw,25px);width:clamp(175px,18%,285px);text-align:justify;}
+.hero-side-note p {font-size:clamp(13px,1.1vw,19px);line-height:1.2;letter-spacing:-.03em;margin:14px 0 0;}
+.hero-side-note .small-label {display:block;text-align:right;color:#777;}
+.hero-bottom {display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:clamp(80px,10vw,180px);font-size:11px;}
+.inline-link {border-bottom: 1px solid var(--ink);padding-bottom:5px;font-family:var(--mono);}
+.inline-link span {margin-left:35px;}
+.hero-stripes {height: 89px;overflow:hidden;background:var(--paper);display:flex;flex-direction:column;justify-content:flex-end;gap:13px;}
+.hero-stripes span {display:block;background:#080808;width:100%;height:9px;flex-shrink:0;}
+.hero-stripes span:nth-child(2) {height:5px;}
+.hero-stripes span:last-child {height:39px;}
+.intro-section {background:var(--ink);color:white;padding:clamp(80px,10vw,185px) 0 clamp(85px,11vw,200px);}
+.intro-layout {display:grid;grid-template-columns:1fr 2.3fr;gap:40px;}
+.section-kicker {margin:0;padding-top:12px;}
+.intro-layout h2 {font-size:clamp(55px,8.9vw,160px);font-weight:900;line-height:.89;letter-spacing:-.08em;margin:0;}
+.intro-layout h2 em {font-style:normal;color:#8c8c8c;}
+.intro-layout p:not(.section-kicker) {font-size:clamp(19px,2.4vw,36px);line-height:1.24;letter-spacing:-.035em;max-width:760px;margin:60px 0 36px;}
+.text-link {display:inline-flex;align-items:center;gap:56px;font-family:var(--mono);font-size:12px;border-bottom:1px solid;padding-bottom:9px;}
+.text-link-light {border-color:#aaa;}
+.services-section,.works-section>.section-shell,.archive-section,.process-section {padding-top:clamp(90px,9vw,160px);padding-bottom:clamp(100px,9vw,165px);}
+.section-heading {margin-bottom:clamp(38px,5vw,80px);}
+.section-heading-top {border-top:1px solid var(--ink);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:11px;}
+.section-heading h2 {font-weight:900;letter-spacing:-.075em;line-height:.95;font-size:clamp(58px,8.1vw,145px);margin:clamp(40px,5vw,80px) 0 0;}
+.section-heading h2>span {color:#969693;}
+.section-heading h2 sup {font-family:var(--mono);letter-spacing:0;font-size:12px;vertical-align:top;position:relative;top:15px;margin-left:13px;}
+.services-list {border-top:1px solid var(--ink);}
+.service-row {display:grid;grid-template-columns: minmax(50px,.5fr) minmax(0,4fr) minmax(35px,.3fr);gap:20px;padding:clamp(20px,2.8vw,45px) 0;border-bottom:1px solid var(--rule);transition:padding .25s;}
+.service-row:hover {padding-inline:10px;}
+.service-num {font-family:var(--mono);font-size:11px;padding-top:7px;}
+.service-row h3 {font-size:clamp(25px,3.45vw,61px);line-height:1;letter-spacing:-.055em;margin:0;font-weight:800;}
+.service-row p {font-size:clamp(13px,1.15vw,19px);color:#5c5c5c;line-height:1.45;max-width:650px;margin:13px 0 0;}
+.service-arrow {font-size:clamp(27px,3vw,46px);line-height:1;justify-self:end;}
+.works-section {background:#ededeb;}
+.featured-grid {display:grid;grid-template-columns:1.23fr 1fr;gap:clamp(24px,3vw,55px);}
+.project-card {min-width:0;}
+.project-cover {height:clamp(300px,37vw,630px);overflow:hidden;position:relative;background:#151515;color:white;isolation:isolate;transition:transform .3s;}
+.project-card:not(.project-large) .project-cover {height:clamp(290px,31vw,510px);}
+.project-card:nth-child(3) .project-cover {height:clamp(290px,31vw,510px);}
+.project-card:nth-child(4) .project-cover {height:clamp(290px,31vw,510px);}
+.project-large {grid-row:span 1;}
+.cover-supercopa {background:#d72028;padding:clamp(25px,3vw,55px);display:flex;flex-direction:column;justify-content:space-between;}
+.cover-supercopa::before {content:"";position:absolute;width:65%;height:135%;border:2px solid #fff;border-radius:50%;top:-19%;right:-28%;transform:rotate(-29deg);opacity:.6;}
+.cover-supercopa::after {content:"";position:absolute;width:48%;height:108%;border:1px solid #fff;border-radius:50%;top:-7%;right:-13%;transform:rotate(-29deg);opacity:.6;}
+.cover-supercopa .cover-micro,.cover-supercopa .cover-foot,.super-text {position:relative;z-index:2;}
+.super-text {font-weight:900;letter-spacing:-.099em;font-size:clamp(63px,9.2vw,168px);line-height:.78;white-space:nowrap;}
+.super-text span {font-size:.1em;letter-spacing:0;position:relative;top:-4em;margin-left:8px;}
+.cover-foot {display:flex;justify-content:space-between;align-items:end;line-height:1.3;}
+.cover-foot span:first-child {font-weight:700;font-family:var(--sans);font-size:clamp(30px,3.8vw,60px);letter-spacing:-.075em;line-height:.87;}
+.cover-identity {padding:clamp(25px,3vw,50px);display:flex;flex-direction:column;justify-content:space-between;}
+.identity-symbol {font-size:clamp(200px,25vw,390px);line-height:.7;font-weight:900;letter-spacing:-.16em;text-align:center;margin-right:12%;}
+.identity-symbol span {font-size:.19em;vertical-align:top;letter-spacing:0;margin-left:.2em;color:#a8a8a8;}
+.identity-name {font-weight:900;font-size:clamp(21px,3.2vw,55px);letter-spacing:-.075em;}
+.cover-gallery {background:#e2e2e2;color:white;}
+.cover-gallery img {width:100%;height:100%;object-fit:cover;filter:grayscale(100%);transition:filter .5s,transform .6s;}
+.cover-gallery:hover img {filter:grayscale(0%);transform:scale(1.045);}
+.cover-stamp {position:absolute;bottom:22px;left:22px;background:#0b0b0b;color:white;padding:10px 12px;font-family:var(--mono);font-size:11px;line-height:1.4;}
+.cover-partner {background:#d6d5cf;color:#111;padding:clamp(25px,3vw,45px);display:flex;flex-direction:column;justify-content:space-between;}
+.cover-partner strong {font-weight:900;letter-spacing:-.1em;font-size:clamp(66px,9.9vw,160px);line-height:.95;position:relative;z-index:2;}
+.cover-partner strong span {font-weight:500;}
+.partner-grid {position:absolute;inset:0;background-image:linear-gradient(#9995 1px,transparent 1px),linear-gradient(90deg,#9995 1px,transparent 1px);background-size:39px 39px;opacity:.7;mask-image:linear-gradient(90deg,transparent,#000);}
+.partner-bottom {font-family:var(--mono);font-size:10px;letter-spacing:.08em;position:relative;z-index:2;}
+.project-info {display:flex;gap:14px;justify-content:space-between;padding:20px 0 48px;border-bottom:1px solid #b5b5b3;align-items:flex-end;}
+.project-index {display:block;color:#6b6b6b;}
+.project-info h3 {font-size:clamp(24px,2.5vw,41px);letter-spacing:-.06em;font-weight:800;line-height:1.05;margin:10px 0;}
+.project-info p {font-size:14px;line-height:1.45;margin:0;max-width:410px;color:#565656;}
+.project-type {font-size:10px;line-height:1.5;text-align:right;white-space:nowrap;}
+.project-action {text-decoration:underline;text-underline-offset:3px;}
+.archive-section {padding-bottom:clamp(100px,10vw,190px);}
+.archive-section .section-heading {margin-bottom:24px;}
+.archive-section .section-heading h2 span {color:var(--ink);}
+.archive-lead {font-size:clamp(17px,1.4vw,22px);line-height:1.3;max-width:630px;margin:0 0 50px auto;}
+.archive-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,2vw,28px);}
+.archive-grid figure {margin:0;min-width:0;}
+.archive-grid img {width:100%;aspect-ratio:1/1;object-fit:cover;background:#dededb;filter:grayscale(1);transition:filter .4s;}
+.archive-grid figure:hover img {filter:grayscale(0);}
+.archive-grid figcaption {border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;padding:12px 0 18px;}
+.instagram-cta {display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin-top:clamp(60px,8vw,130px);padding:clamp(24px,3vw,50px) 0;transition:padding .2s;}
+.instagram-cta:hover {padding-inline:12px;}
+.instagram-cta>span:first-child {display:flex;flex-direction:column;gap:12px;}
+.instagram-cta strong {font-size:clamp(53px,9vw,155px);letter-spacing:-.09em;line-height:.85;}
+.instagram-cta-arrow {font-size:clamp(44px,7vw,110px);line-height:1;}
+.about-section {background:#d9d9d4;padding:clamp(105px,10vw,180px) 0;}
+.about-layout {display:grid;grid-template-columns:1fr 2fr;gap:clamp(30px,4vw,75px);}
+.about-left {display:flex;flex-direction:column;justify-content:space-between;gap:80px;}
+.about-badge {height:180px;width:180px;border:1px solid #222;border-radius:50%;display:flex;align-items:center;justify-content:center;gap:4px;transform:rotate(-15deg);}
+.about-badge>span {font-weight:900;font-size:78px;letter-spacing:-.12em;}
+.about-badge small {font-family:var(--mono);font-size:9px;line-height:1.3;}
+.about-right h2 {font-size:clamp(51px,6.9vw,120px);letter-spacing:-.084em;line-height:.93;margin:0 0 75px;font-weight:900;}
+.about-right em {font-style:normal;color:#7a7a78;}
+.about-text {display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+.about-text p {font-size:clamp(17px,1.5vw,23px);line-height:1.35;letter-spacing:-.025em;margin:0;}
+.about-facts {display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid #777;margin-top:75px;padding-top:23px;}
+.about-facts>div {display:flex;flex-direction:column;gap:6px;}
+.about-facts strong {font-size:clamp(14px,1.6vw,23px);letter-spacing:-.04em;}
+.about-facts span {color:#5c5c5c;}
+.process-grid {display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(15px,2vw,35px);}
+.process-grid>div {border-top:1px solid var(--ink);padding-top:18px;}
+.process-grid h3 {font-size:clamp(27px,2.9vw,49px);letter-spacing:-.065em;margin:65px 0 13px;line-height:1;}
+.process-grid p {font-size:clamp(14px,1.15vw,18px);line-height:1.4;max-width:300px;color:#555;margin:0;}
+.contact-section {background:#090909;color:white;padding:clamp(85px,8vw,150px) 0 clamp(100px,9vw,175px);}
+.contact-top {display:flex;align-items:center;justify-content:space-between;border-top:1px solid #5d5d5d;padding-top:15px;}
+.contact-section h2 {font-size:clamp(77px,13.6vw,230px);line-height:.8;font-weight:900;letter-spacing:-.09em;margin:clamp(65px,9vw,130px) 0;}
+.contact-section h2 span {color:#777;}
+.contact-columns {display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(35px,8vw,150px);align-items:start;}
+.contact-copy p {font-size:clamp(21px,2.6vw,40px);letter-spacing:-.05em;line-height:1.16;margin:0 0 45px;max-width:420px;}
+.contact-quick {display:inline-flex;align-items:center;gap:32px;border-bottom:1px solid #fff;padding-bottom:12px;font-family:var(--mono);font-size:12px;}
+.contact-form {display:grid;gap:28px;}
+.contact-form label {font-family:var(--mono);font-size:11px;display:flex;flex-direction:column;gap:12px;color:#a9a9a9;}
+.field-grid {display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.contact-form input,.contact-form select,.contact-form textarea {background:transparent;color:white;border:0;border-bottom:1px solid #686868;padding:12px 0 16px;border-radius:0;outline:0;width:100%;font-family:var(--sans);font-size:18px;}
+.contact-form input::placeholder,.contact-form textarea::placeholder {color:#6a6a6a;}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus {border-color:#fff;}
+.contact-form select {appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right center;padding-right:22px;}
+.contact-form select option {background:#181818;}
+.contact-form button {border:none;background:white;color:#070707;font-family:var(--mono);font-size:12px;text-align:left;display:flex;justify-content:space-between;padding:22px 25px;transition:background .2s;}
+.contact-form button:hover {background:#d5d5d3;}
+.contact-form button span {font-size:24px;line-height:.6;}
+.form-disclaimer {font-size:10px;color:#929292;margin:-12px 0 0;line-height:1.5;}
+.site-footer {background:#090909;color:#fff;border-top:1px solid #3f3f3f;padding:45px 0 28px;}
+.footer-top {display:flex;justify-content:space-between;align-items:flex-start;gap:20px;border-bottom:1px solid #3f3f3f;padding-bottom:30px;}
+.footer-wordmark {font-size:clamp(80px,18.8vw,330px);font-weight:900;line-height:.75;letter-spacing:-.095em;display:block;}
+.footer-wordmark sup {font-family:var(--mono);letter-spacing:0;font-size:12px;position:relative;top:-3em;}
+.back-top {white-space:nowrap;padding-top:4px;}
+.footer-bottom {display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:23px;color:#999;}
+.footer-bottom>div {display:flex;gap:25px;}
+.footer-bottom a:hover,.back-top:hover {color:white;text-decoration:underline;text-underline-offset:4px;}
+@media (min-width: 1800px) {.hero-title {font-size:208px;}.hero {min-height:820px;}}
+@media (max-width: 1150px) {
+  .header-inner {grid-template-columns:1.2fr 3fr;}
+  .primary-nav {gap:12px;}
+  .primary-nav>a {font-size:9px;}
+  .primary-nav i {width:7px;height:7px;}
+  .hero-title {font-size:10.5vw;}
+  .hero-side-note {width:190px;}
+  .project-type {white-space:normal;}
+}
+@media (max-width: 850px) {
+  .header-inner {display:flex;align-items:center;justify-content:space-between;padding-bottom:15px;border-bottom:1px solid var(--rule);}
+  .brand {padding:0;border:0;}
+  .menu-toggle {border:1px solid var(--ink);width:45px;height:43px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;background:transparent;}
+  .menu-toggle span {width:19px;height:2px;background:var(--ink);transition:transform .2s;}
+  .menu-toggle[aria-expanded="true"] span:first-child {transform:translateY(4px) rotate(45deg);}
+  .menu-toggle[aria-expanded="true"] span:last-child {transform:translateY(-4px) rotate(-45deg);}
+  .primary-nav {display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:15px var(--page-margin) 25px;border-bottom:1px solid var(--ink);box-shadow:0 12px 25px #0001;grid-template-columns:1fr;gap:0;}
+  .primary-nav.is-open {display:grid;}
+  .primary-nav>a {padding:15px 0;font-size:13px;justify-content:flex-start;gap:14px;}
+  .primary-nav>a span {margin-left:auto;}
+  .hero {min-height:650px;padding-top:90px;}
+  .hero-meta span:last-child {display:none;}
+  .hero-composition {padding-top:90px;}
+  .hero-side-note {top:0;width:200px;}
+  .hero-title {font-size:10.5vw;}
+  .hero-indent {padding-left:12%;}
+  .hero-ending {padding-left:4%;}
+  .hero-ending>span:last-child {font-size:.77em;}
+  .hero-object {width:1.1em;}
+  .intro-layout {grid-template-columns:1fr;}
+  .intro-layout .section-kicker {margin-bottom:35px;}
+  .intro-layout p:not(.section-kicker) {margin-top:38px;}
+  .featured-grid {gap:24px;}
+  .project-card:not(.project-large) .project-cover,.project-cover {height:360px;}
+  .project-info {flex-direction:column;align-items:start;padding-bottom:32px;}
+  .project-type {text-align:left;}
+  .about-layout {grid-template-columns:1fr;}
+  .about-left {flex-direction:row;align-items:start;}
+  .about-badge {height:100px;width:100px;}
+  .about-badge>span {font-size:42px;}
+  .about-badge small {font-size:6px;}
+  .about-right h2 {margin-bottom:45px;}
+  .contact-columns {grid-template-columns:1fr;}
+}
+@media (max-width: 600px) {
+  html {scroll-padding-top:65px;}
+  .section-shell {padding-inline:19px;}
+  .hero {min-height:610px;padding-top:38px;padding-bottom:75px;}
+  .hero-meta {font-size:9px;line-height:1.4;flex-wrap:wrap;gap:8px;}
+  .hero-meta span:nth-child(2) {margin-left:auto;}
+  .hero-composition {padding-top:135px;}
+  .hero-side-note {top:12px;right:0;width:min(220px,64vw);}
+  .hero-side-note p {font-size:13px;margin-top:9px;}
+  .hero-title {font-size:12.1vw;line-height:.91;letter-spacing:-.09em;}
+  .hero-indent {padding-left:10%;}
+  .hero-ending {gap:5px;padding-left:0;margin-top:7px;}
+  .hero-ending>span:last-child {font-size:.73em;}
+  .hero-object {width:1.23em;height:.98em;}
+  .object-caption {font-size:5px;}
+  .hero-bottom {margin-top:105px;align-items:flex-end;}
+  .hero-bottom>span {font-size:9px;text-align:right;}
+  .hero-bottom a {font-size:10px;max-width:148px;}
+  .hero-bottom a span {margin-left:10px;}
+  .hero-stripes {height:54px;gap:7px;}
+  .hero-stripes span {height:6px;}
+  .hero-stripes span:nth-child(2) {height:4px;}
+  .hero-stripes span:last-child {height:25px;}
+  .intro-section {padding-top:90px;padding-bottom:90px;}
+  .intro-layout h2 {font-size:14vw;}
+  .intro-layout p:not(.section-kicker) {font-size:20px;}
+  .section-heading-top {font-size:9px;}
+  .section-heading h2 {font-size:13vw;margin-top:42px;}
+  .section-heading h2 sup {font-size:9px;top:2px;margin-left:5px;}
+  .service-row {grid-template-columns:30px 1fr 20px;gap:8px;padding:23px 0;}
+  .service-row h3 {font-size:24px;}
+  .service-row p {font-size:13px;}
+  .service-arrow {font-size:22px;}
+  .featured-grid {grid-template-columns:1fr;gap:18px;}
+  .project-card:not(.project-large) .project-cover,.project-card:nth-child(3) .project-cover,.project-card:nth-child(4) .project-cover,.project-cover {height:365px;}
+  .super-text {font-size:clamp(61px,17vw,110px);}
+  .cover-supercopa {padding:25px;}
+  .cover-foot span:first-child {font-size:37px;}
+  .identity-symbol {font-size:260px;}
+  .cover-partner strong {font-size:100px;}
+  .project-info {gap:10px;}
+  .project-info h3 {font-size:28px;}
+  .archive-grid {grid-template-columns:repeat(2,1fr);gap:12px;}
+  .archive-lead {font-size:16px;margin-bottom:30px;}
+  .archive-grid figcaption {font-size:9px;}
+  .instagram-cta strong {font-size:16vw;}
+  .instagram-cta-arrow {font-size:50px;}
+  .about-section {padding:90px 0;}
+  .about-left {margin-bottom:30px;}
+  .about-right h2 {font-size:12.6vw;}
+  .about-text {grid-template-columns:1fr;gap:17px;}
+  .about-text p {font-size:18px;}
+  .about-facts {grid-template-columns:1fr 1fr;gap:24px 10px;margin-top:45px;}
+  .about-facts strong {font-size:17px;}
+  .process-grid {grid-template-columns:1fr 1fr;gap:35px 18px;}
+  .process-grid h3 {font-size:29px;margin:35px 0 10px;}
+  .process-grid p {font-size:14px;}
+  .contact-section h2 {font-size:17vw;margin:85px 0 55px;}
+  .contact-top {font-size:9px;}
+  .contact-copy p {font-size:29px;margin-bottom:35px;}
+  .field-grid {grid-template-columns:1fr;gap:25px;}
+  .contact-form input,.contact-form select,.contact-form textarea {font-size:16px;}
+  .footer-top {display:block;}
+  .footer-wordmark {font-size:20vw;margin-bottom:28px;}
+  .back-top {display:block;text-align:right;}
+  .footer-bottom {flex-direction:column;font-size:9px;}
+  .footer-bottom>div {flex-wrap:wrap;gap:14px 18px;}
+}
+@media (max-width: 360px) {
+  .hero-title {font-size:11.7vw;}
+  .hero-ending>span:last-child {font-size:.70em;}
+  .hero-object {width:1.12em;}
+  .cover-partner strong {font-size:82px;}
+}
+@media (prefers-reduced-motion: reduce) {
+  html {scroll-behavior:auto;}
+  *,*::before,*::after {transition:none !important;animation:none !important;}
+}
+[hidden] { display: none !important; }
+
+
+
+/* — PORTFÓLIO REAL · NOVEMBRO 2026 — */
+.portfolio-hub{padding-top:clamp(95px,10vw,180px);padding-bottom:clamp(80px,7vw,135px);}
+.portfolio-hub .section-heading h2{font-size:clamp(62px,11vw,190px);margin-top:clamp(55px,7vw,120px);line-height:.84;}
+.portfolio-hub .portfolio-blurb{display:flex;justify-content:space-between;gap:40px;align-items:end;border-top:1px solid var(--rule);padding-top:24px;margin-top:clamp(55px,6vw,100px);}
+.portfolio-blurb p{max-width:490px;font-size:clamp(18px,1.8vw,28px);line-height:1.25;margin:0;letter-spacing:-.035em;}
+.portfolio-blurb span{font:11px var(--mono);white-space:nowrap;}
+.portfolio-jump{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px;}
+.portfolio-jump a{border:1px solid var(--ink);font-family:var(--mono);font-size:11px;display:flex;gap:20px;align-items:center;justify-content:space-between;padding:18px 17px;transition:background .2s,color .2s;}
+.portfolio-jump a:hover{background:var(--ink);color:#fff;}
+.portfolio-jump a span{font-size:20px;line-height:.8;}
+.work-category{padding:clamp(100px,10vw,190px) 0;}
+.work-category:nth-of-type(even){background:#e9e9e5;}
+.work-category .category-top{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--ink);padding-top:12px;font:11px var(--mono);}
+.work-category .category-head{display:grid;grid-template-columns:1.5fr .65fr;gap:clamp(30px,6vw,110px);align-items:end;margin:clamp(46px,5vw,90px) 0 clamp(50px,5vw,90px);}
+.work-category .category-head h2{font-size:clamp(60px,9.2vw,165px);line-height:.84;letter-spacing:-.09em;font-weight:900;margin:0;}
+.work-category .category-head h2 span{color:#999;}
+.work-category .category-head p{font-size:clamp(16px,1.4vw,22px);line-height:1.3;margin:0;letter-spacing:-.025em;}
+.work-grid{display:grid;gap:clamp(20px,2.7vw,44px);}
+.work-grid.two-up{grid-template-columns:repeat(2,minmax(0,1fr));}
+.work-grid.three-up{grid-template-columns:repeat(3,minmax(0,1fr));}
+.work-item{margin:0;min-width:0;}
+.work-image{overflow:hidden;background:#d5d5d1;position:relative;}
+.work-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease;filter:none;}
+.work-item:hover .work-image img{transform:scale(1.02);}
+.work-image.portrait{aspect-ratio:4/5;}
+.work-image.landscape{aspect-ratio:4/3;}
+.work-image.wide{aspect-ratio:16/9;}
+.work-image.panorama{aspect-ratio:1408/655;}
+.work-image img.contain{object-fit:contain;background:#171717;}
+.work-image.tilt-top img{object-position:center 30%;}
+.work-item figcaption{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--rule);padding-top:15px;margin-top:18px;align-items:start;}
+.work-item h3{font-size:clamp(22px,2.7vw,45px);letter-spacing:-.06em;line-height:1.05;margin:5px 0 8px;}
+.work-item p{font-size:14px;line-height:1.5;max-width:500px;color:#666;margin:0;}
+.work-index,.work-tag{font:10px var(--mono);letter-spacing:.03em;}
+.work-index{color:#777;display:block;margin-bottom:6px;}
+.work-tag{white-space:nowrap;text-align:right;padding-top:3px;}
+.work-category.dark-work{background:#0b0b0b;color:#fff;}
+.dark-work .category-top{border-color:#666;}
+.dark-work .category-head h2 span{color:#777;}
+.dark-work .work-item figcaption{border-color:#555;}
+.dark-work .work-item p,.dark-work .work-index{color:#aaa;}
+.dark-work .work-image{background:#292929;}
+.work-category .mini-cta{display:inline-flex;gap:30px;align-items:center;font:12px var(--mono);padding-bottom:10px;border-bottom:1px solid;margin-top:45px;}
+.work-category .mini-cta span{font-size:18px;}
+.work-category .mini-cta:hover{gap:40px;}
+.graphics-section .graphic-feature{display:block;margin:0;}
+.graphics-section .graphic-feature .work-image img{object-fit:cover;}
+.graphics-section .graphic-feature figcaption{display:flex;justify-content:space-between;gap:30px;border-top:1px solid var(--ink);margin-top:18px;padding-top:15px;}
+.graphics-section .graphic-feature h3{font-size:clamp(28px,3.8vw,60px);margin:4px 0 5px;letter-spacing:-.07em;}
+.graphics-section .graphic-feature p{font-size:15px;color:#555;max-width:460px;line-height:1.5;margin:0;}
+.graphics-section .graphic-feature .work-tag{padding-top:8px;}
+.graphics-section .archive-quick{display:flex;align-items:center;justify-content:space-between;gap:30px;background:#111;color:#fff;padding:clamp(23px,3vw,48px);margin-top:clamp(45px,5vw,90px);}
+.graphics-section .archive-quick strong{font-size:clamp(32px,4.6vw,70px);line-height:.95;letter-spacing:-.08em;}
+.graphics-section .archive-quick span{font-size:clamp(30px,4vw,60px);}
+.graphics-section .archive-quick:hover{background:#282828;}
+.portfolio-note{font:11px var(--mono);color:#777;margin:40px 0 0;line-height:1.5;}
+@media(max-width:1100px){
+ .work-category .category-head{grid-template-columns:1fr;gap:30px;}
+ .work-category .category-head p{max-width:570px;}
+ .work-grid.three-up{grid-template-columns:repeat(2,minmax(0,1fr));}
+ .work-grid.three-up>.work-item:last-child{grid-column:1/-1;max-width:650px;}
+ .portfolio-jump{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:650px){
+ .portfolio-hub{padding-bottom:65px;}
+ .portfolio-hub .section-heading h2{font-size:16vw;}
+ .portfolio-hub .portfolio-blurb{display:block;margin-top:45px;}
+ .portfolio-blurb span{display:block;margin-bottom:20px;}
+ .portfolio-blurb p{font-size:19px;}
+ .portfolio-jump{grid-template-columns:1fr 1fr;gap:9px;margin-top:20px;}
+ .portfolio-jump a{padding:13px 10px;font-size:9px;gap:9px;}
+ .portfolio-jump a span{font-size:16px;}
+ .work-category{padding:80px 0;}
+ .work-category .category-top{font-size:9px;}
+ .work-category .category-head{margin:45px 0 35px;}
+ .work-category .category-head h2{font-size:15vw;}
+ .work-category .category-head p{font-size:17px;}
+ .work-grid.two-up,.work-grid.three-up{grid-template-columns:1fr;}
+ .work-grid.three-up>.work-item:last-child{grid-column:auto;}
+ .work-image.portrait{aspect-ratio:4/5;}
+ .work-item figcaption{gap:9px;}
+ .work-item h3{font-size:28px;}
+ .work-item p{font-size:13px;}
+ .work-tag{font-size:9px;white-space:normal;}
+ .graphics-section .graphic-feature figcaption{display:block;}
+ .graphics-section .graphic-feature .work-tag{display:block;text-align:left;margin-top:18px;}
+}
+
+  </style>
 </head>
 <body>
   <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
@@ -70,57 +464,116 @@
     </section>
 
     <section class="services-section section-shell" id="servicos" aria-labelledby="services-title">
-      <div class="section-heading"><div class="section-heading-top"><span>02 / O QUE FAZEMOS</span><span>DO CONCEITO À ENTREGA</span></div><h2 id="services-title">NOSSAS <span>SOLUÇÕES</span><sup>(04)</sup></h2></div>
+      <div class="section-heading"><div class="section-heading-top"><span>02 / O QUE FAZEMOS</span><span>DO CONCEITO À ENTREGA</span></div><h2 id="services-title">NOSSAS <span>SOLUÇÕES</span><sup>(05)</sup></h2></div>
       <div class="services-list">
         <article class="service-row"><span class="service-num">01</span><div><h3>DESIGN & BRANDING</h3><p>Identidades visuais, direção de arte, campanhas e materiais para mídias digitais.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
         <article class="service-row"><span class="service-num">02</span><div><h3>DESENVOLVIMENTO WEB</h3><p>Sites institucionais, landing pages e interfaces pensadas para pessoas reais.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
         <article class="service-row"><span class="service-num">03</span><div><h3>DADOS & AUTOMAÇÃO</h3><p>Painéis, sistemas de organização e fluxos de trabalho mais inteligentes.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
         <article class="service-row"><span class="service-num">04</span><div><h3>CONTEÚDO & EVENTOS</h3><p>Comunicação visual, calendários, cobertura gráfica e divulgação de projetos e eventos.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
+        <article class="service-row"><span class="service-num">05</span><div><h3>FOTOGRAFIA ESPORTIVA</h3><p>Registros de jogos, atletas e momentos que merecem ser lembrados.</p></div><span class="service-arrow" aria-hidden="true">↗</span></article>
       </div>
     </section>
 
-    <section class="works-section" id="projetos" aria-labelledby="works-title">
+    <section class="portfolio-hub section-shell" id="projetos" aria-labelledby="portfolio-title">
+      <div class="section-heading">
+        <div class="section-heading-top"><span>03 / TRABALHOS SELECIONADOS</span><span>COYEBER® / 2026</span></div>
+        <h2 id="portfolio-title">PORTFÓLIO<span>.</span><sup>(09)</sup></h2>
+      </div>
+      <div class="portfolio-blurb">
+        <span>DA CÂMERA AO CÓDIGO / DO CONCEITO AO VISUAL</span>
+        <p>Projetos de verdade, feitos com olhar criativo e atenção a cada detalhe. Descubra algumas das nossas entregas.</p>
+      </div>
+      <nav class="portfolio-jump" aria-label="Categorias do portfólio">
+        <a href="#fotografia">01 / FOTOGRAFIA <span aria-hidden="true">↗</span></a>
+        <a href="#projetos-web">02 / PROJETOS WEB <span aria-hidden="true">↗</span></a>
+        <a href="#projetos-3d">03 / PROJETOS 3D <span aria-hidden="true">↗</span></a>
+        <a href="#designs">04 / DESIGN GRÁFICO <span aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+
+    <section class="work-category dark-work" id="fotografia" aria-labelledby="photography-title">
       <div class="section-shell">
-        <div class="section-heading"><div class="section-heading-top"><span>03 / PORTFÓLIO</span><span>PROJETOS & EXPERIMENTOS</span></div><h2 id="works-title">TRABALHOS <span>EM DESTAQUE</span><sup>(04)</sup></h2></div>
-        <div class="featured-grid">
-          <article class="project-card project-large">
-            <div class="project-cover cover-supercopa" role="img" aria-label="Composição editorial preta e vermelha com os dizeres Supercopa UNICAP 2026">
-              <span class="cover-micro">COYEBER / CASE 001</span><div class="super-text">SUPER<br>COPA<span>®</span></div><div class="cover-foot"><span>UNICAP<br>2026</span><span>COMUNICAÇÃO<br>ESPORTIVA</span></div>
-            </div>
-            <div class="project-info"><div><span class="project-index">001 / PROJETO</span><h3>Supercopa UNICAP 2026</h3><p>Gestão visual, tabelas de competições, organização de informações e divulgação esportiva.</p></div><span class="project-type">EVENTOS / DESIGN / DADOS</span></div>
-          </article>
-          <article class="project-card">
-            <div class="project-cover cover-identity" role="img" aria-label="Composição gráfica com o nome Coyeber em branco sobre preto">
-              <span class="cover-micro">IDENTIDADE / DIGITAL</span><div class="identity-symbol">C<span>✳</span></div><span class="identity-name">COYEBER STUDIO</span>
-            </div>
-            <div class="project-info"><div><span class="project-index">002 / PROJETO</span><h3>Identidade Coyeber</h3><p>Direção visual e presença digital da própria agência.</p></div><span class="project-type">BRANDING / WEB</span></div>
-          </article>
-          <article class="project-card">
-            <div class="project-cover cover-gallery"><img src="https://i.ibb.co/rRFffdH9/web2.png" alt="Trabalho visual do portfólio original da Coyeber" loading="lazy" decoding="async"><span class="cover-stamp">CRIATIVIDADE<br>EM CADA DETALHE.</span></div>
-            <div class="project-info"><div><span class="project-index">003 / COLEÇÃO</span><h3>Criação visual</h3><p>Seleção de peças apresentadas no portfólio original da agência.</p></div><span class="project-type">DESIGN / ARTE</span></div>
-          </article>
-          <article class="project-card">
-            <div class="project-cover cover-partner" role="img" aria-label="Composição tipográfica CASS3DS, criação digital e modelagem 3D">
-              <span class="cover-micro">PARCEIRO CRIATIVO / 004</span><strong>CASS<span>3DS</span></strong><div class="partner-grid" aria-hidden="true"></div><span class="partner-bottom">MODELAGEM / CULTURA DIGITAL</span>
-            </div>
-            <div class="project-info"><div><span class="project-index">004 / PARCERIA</span><h3>Parceiro CASS3DS</h3><p>Conheça as criações digitais e os projetos do nosso parceiro.</p></div><a class="project-type project-action" href="about.html" aria-label="Conhecer parceiro CASS3DS">VER PARCEIRO ↗</a></div>
-          </article>
+        <div class="category-top"><span>01 / FOTOGRAFIA</span><span>REGISTROS QUE CONTAM HISTÓRIAS</span></div>
+        <div class="category-head">
+          <h2 id="photography-title">OLHAR<span>.</span><br>INSTANTE<span>.</span></h2>
+          <p>Em quadra, cada momento tem uma história. Fotografia esportiva para guardar a intensidade e os detalhes que fazem parte de cada jogo.</p>
+        </div>
+        <div class="work-grid two-up">
+          <figure class="work-item">
+            <div class="work-image portrait"><img src="./assets/work/fotografia-volei.webp" width="701" height="855" alt="Duas atletas de voleibol próximas à rede em uma quadra, fotografadas durante a partida" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">FOTO / 001</span><h3>Entre a rede e o jogo</h3><p>Fotografia esportiva • Voleibol</p></div><span class="work-tag">ESPORTE / FOTOGRAFIA</span></figcaption>
+          </figure>
+          <figure class="work-item">
+            <div class="work-image portrait"><img src="./assets/work/fotografia-futsal.webp" width="607" height="831" alt="Atleta de uniforme branco e dourado correndo em uma quadra azul durante partida de futsal" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">FOTO / 002</span><h3>O movimento em cena</h3><p>Fotografia esportiva • Futsal</p></div><span class="work-tag">ESPORTE / FOTOGRAFIA</span></figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="archive-section section-shell" id="instagram" aria-labelledby="archive-title">
-      <div class="section-heading"><div class="section-heading-top"><span>04 / ARQUIVO VISUAL</span><span>DO NOSSO PORTFÓLIO AO SEU FEED</span></div><h2 id="archive-title">NOSSO OLHAR<span>.</span><sup>(06)</sup></h2></div>
-      <p class="archive-lead">Uma seleção de criações do site original. Para ver publicações, novidades e projetos recentes, acompanhe nosso perfil oficial.</p>
-      <div class="archive-grid">
-        <figure><img src="https://i.ibb.co/rRFffdH9/web2.png" alt="Peça 01 do portfólio visual da Coyeber" loading="lazy" decoding="async"><figcaption>VISUAL 001 <span>↗</span></figcaption></figure>
-        <figure><img src="https://i.ibb.co/fY47yX92/web1.png" alt="Peça 02 do portfólio visual da Coyeber" loading="lazy" decoding="async"><figcaption>VISUAL 002 <span>↗</span></figcaption></figure>
-        <figure><img src="https://i.ibb.co/Cpt9PYq6/web5.png" alt="Peça 03 do portfólio visual da Coyeber" loading="lazy" decoding="async"><figcaption>VISUAL 003 <span>↗</span></figcaption></figure>
-        <figure><img src="https://i.ibb.co/HDzFT3Fx/web3.png" alt="Peça 04 do portfólio visual da Coyeber" loading="lazy" decoding="async"><figcaption>VISUAL 004 <span>↗</span></figcaption></figure>
-        <figure><img src="https://i.ibb.co/k2YScjtb/web44.png" alt="Peça 05 do portfólio visual da Coyeber" loading="lazy" decoding="async"><figcaption>VISUAL 005 <span>↗</span></figcaption></figure>
-        <figure><img src="https://i.ibb.co/rf5d02sd/web55.png" alt="Peça 06 do portfólio visual da Coyeber" loading="lazy" decoding="async"><figcaption>VISUAL 006 <span>↗</span></figcaption></figure>
+    <section class="work-category" id="projetos-web" aria-labelledby="web-title">
+      <div class="section-shell">
+        <div class="category-top"><span>02 / PROJETOS DIGITAIS</span><span>SITES, SISTEMAS & INTERFACES</span></div>
+        <div class="category-head">
+          <h2 id="web-title">DIGITAL<br><span>EM AÇÃO.</span></h2>
+          <p>Interfaces que facilitam o uso, tornam a informação mais clara e dão vida às ideias. Da apresentação visual à experiência de navegação.</p>
+        </div>
+        <div class="work-grid three-up">
+          <figure class="work-item">
+            <div class="work-image landscape"><img src="./assets/work/projeto-poli-energia.webp" width="1560" height="720" alt="Interface do sistema POLI Energia com painel de análise energética e gráficos de consumo" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">WEB / 001</span><h3>POLI Energia</h3><p>Painel inteligente para visualização e análise de dados energéticos.</p></div><span class="work-tag">DASHBOARD / WEB</span></figcaption>
+          </figure>
+          <figure class="work-item">
+            <div class="work-image landscape"><img src="./assets/work/projeto-kethilly-lima.webp" width="1560" height="725" alt="Página inicial do portfólio Kethilly Lima em tons creme com foto da estudante de Direito" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">WEB / 002</span><h3>Kethilly Lima</h3><p>Portfólio pessoal com conteúdo acadêmico, apresentação e identidade visual própria.</p></div><span class="work-tag">PORTFÓLIO / WEB</span></figcaption>
+          </figure>
+          <figure class="work-item">
+            <div class="work-image landscape"><img src="./assets/work/projeto-unicap-esporte.webp" width="1560" height="799" alt="Site UNICAP Esporte com chamada para inscrições e fotografia dos troféus esportivos" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">WEB / 003</span><h3>UNICAP Esporte</h3><p>Plataforma com modalidades, competições, inscrições, calendário e informações esportivas.</p></div><a class="work-tag project-action" href="https://unicap-esporte.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site UNICAP Esporte">VISITAR SITE ↗</a></figcaption>
+          </figure>
+        </div>
       </div>
-      <a class="instagram-cta" href="https://www.instagram.com/coyeber/" target="_blank" rel="noopener noreferrer"><span><span class="small-label">SIGA NOSSOS PROJETOS</span><strong>@COYEBER</strong></span><span class="instagram-cta-arrow" aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="work-category dark-work" id="projetos-3d" aria-labelledby="three-d-title">
+      <div class="section-shell">
+        <div class="category-top"><span>03 / PROJETOS 3D</span><span>PARCERIA CRIATIVA / CASS3DS</span></div>
+        <div class="category-head">
+          <h2 id="three-d-title">ALÉM<br><span>DA TELA.</span></h2>
+          <p>Modelagem de veículos e personagens para ambientes digitais. Uma seleção de trabalhos 3D apresentados pela CASS3DS, parceiro criativo da Coyeber.</p>
+        </div>
+        <div class="work-grid three-up">
+          <figure class="work-item">
+            <div class="work-image landscape"><img src="./assets/work/projeto-3d-moto.webp" width="1366" height="761" alt="Modelagem 3D de motocicleta vista em dois ângulos sobre fundo escuro" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">3D / 001</span><h3>Motocicleta customizada</h3><p>Modelagem digital de veículo em múltiplos ângulos.</p></div><span class="work-tag">CASS3DS / 3D</span></figcaption>
+          </figure>
+          <figure class="work-item">
+            <div class="work-image landscape"><img src="./assets/work/projeto-3d-viatura.webp" width="1365" height="767" alt="Renderização de modelo tridimensional de viatura camuflada" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">3D / 002</span><h3>Viatura personalizada</h3><p>Criação e customização visual de veículo digital.</p></div><span class="work-tag">CASS3DS / 3D</span></figcaption>
+          </figure>
+          <figure class="work-item">
+            <div class="work-image landscape"><img src="./assets/work/projeto-3d-personagem.webp" width="1365" height="767" alt="Personagem tático modelado em 3D em três ângulos sobre fundo escuro" loading="lazy" decoding="async"></div>
+            <figcaption><div><span class="work-index">3D / 003</span><h3>Personagem tático</h3><p>Modelagem e texturização de personagem para universo digital.</p></div><span class="work-tag">CASS3DS / 3D</span></figcaption>
+          </figure>
+        </div>
+        <a href="about.html" class="mini-cta">EXPLORAR A GALERIA CASS3DS <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="work-category graphics-section" id="designs" aria-labelledby="design-title">
+      <div class="section-shell">
+        <div class="category-top"><span>04 / DESIGN GRÁFICO</span><span>UMA SELEÇÃO DO NOSSO FEED</span></div>
+        <div class="category-head">
+          <h2 id="design-title">CRIAÇÃO<br><span>SEM LIMITES.</span></h2>
+          <p>Artes para esporte, campanhas, identidade de eventos e conteúdos de redes sociais. Comunicação que ganha personalidade em cada peça.</p>
+        </div>
+        <figure class="graphic-feature">
+          <div class="work-image panorama"><img src="./assets/work/designs-recentes.webp" width="1408" height="655" alt="Mosaico de publicações e peças gráficas em vermelho, preto, azul e branco exibidas no perfil da Coyeber" loading="lazy" decoding="async"></div>
+          <figcaption><div><span class="work-index">DESIGN / 001</span><h3>Designs recentes</h3><p>Uma amostra das artes e campanhas desenvolvidas e apresentadas no portfólio da Coyeber.</p></div><span class="work-tag">SOCIAL MEDIA / DESIGN / ESPORTE</span></figcaption>
+        </figure>
+        <a href="https://www.instagram.com/coyeber/" target="_blank" rel="noopener noreferrer" class="archive-quick" id="instagram" aria-label="Visitar Instagram da Coyeber"><div><span class="small-label">MAIS PROJETOS, BASTIDORES E NOVIDADES</span><br><strong>ACOMPANHE @COYEBER</strong></div><span aria-hidden="true">↗</span></a>
+        <p class="portfolio-note">* Imagens apresentadas com base nos trabalhos fornecidos para o portfólio. Para acompanhar novas publicações, visite nosso Instagram.</p>
+      </div>
     </section>
 
     <section class="about-section" id="sobre" aria-labelledby="about-title">
