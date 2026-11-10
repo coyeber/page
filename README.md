@@ -29,3 +29,21 @@ Website estático em HTML, CSS e JavaScript, publicado via GitHub Pages em https
 Se o GitHub Pages estiver configurado para servir a raiz da branch main, o merge da pull request fará a nova versão ser publicada. O comportamento depende das configurações de Pages do repositório.
 
 Feito para ser editável sem frameworks ou etapa de build.
+
+
+## Portfólio de novembro de 2026
+
+Todas as nove imagens novas foram enviadas pelo responsável pela Coyeber e armazenadas em assets/work/ no formato WebP. Nenhuma das seções depende de incorporar o feed privado do Instagram.
+
+| Seção | Arquivos |
+|---|---|
+| Fotografia | fotografia-volei.webp, fotografia-futsal.webp |
+| Projetos digitais | projeto-poli-energia.webp, projeto-kethilly-lima.webp, projeto-unicap-esporte.webp |
+| Projetos 3D (CASS3DS) | projeto-3d-moto.webp, projeto-3d-viatura.webp, projeto-3d-personagem.webp |
+| Design recente | designs-recentes.webp |
+
+A página inicial usa o estilo em coyeber-redesign-2026.css e mantém uma cópia desse CSS dentro do HTML como garantia de visual caso a hospedagem não carregue o arquivo externo (problema identificado nas capturas de tela anteriores). A mesma proteção foi aplicada a about.html.
+
+Para atualizar uma imagem: substitua o arquivo correspondente na pasta assets/work/ preservando seu caminho; para adicionar um projeto, edite o HTML da categoria correspondente em index.html.
+
+O conjunto apresentado contém nove imagens efetivamente anexadas na conversa. A categorização considera o conteúdo visual, inclusive o screenshot da UNICAP Esporte como um projeto digital e a montagem do feed como designs recentes.
